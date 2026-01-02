@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_image">
+
+    <Button
+        android:id="@+id/photo_tagger"
+        android:background="@drawable/button_style"
+        android:onClick="openPhotoTagger"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo Tagger"
+        android:textColor="#2196F3"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/sketch_tagger"
+        android:background="@drawable/button_style"
+        android:onClick="openSketchTagger"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sketch Tagger"
+        android:textColor="#2196F3"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/story_teller"
+        android:background="@drawable/button_style"
+        android:onClick="openStoryTeller"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story Teller"
+        android:textColor="#2196F3"
+        app:backgroundTint="@null"/>
+
+</LinearLayout>

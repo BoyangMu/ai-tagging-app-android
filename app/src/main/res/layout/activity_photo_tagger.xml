@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photoTagger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".PhotoTaggerActivity"
+    android:background="@drawable/background_image">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:background="@drawable/black_border" />
+
+    <EditText
+        android:id="@+id/tagsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter tags" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:onClick="openCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Camera"
+            android:background="@drawable/button_style"
+            android:textColor="#2196F3"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:onClick="saveImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:background="@drawable/button_style"
+            android:textColor="#2196F3"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/findEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Find tag" />
+
+    <Button
+        android:id="@+id/findButton"
+        android:onClick="findImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find"
+        android:background="@drawable/button_style"
+        android:textColor="#2196F3"
+        app:backgroundTint="@null" />
+
+    <ListView
+        android:id="@+id/photoList"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:onClick="back"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@drawable/button_style"
+        android:textColor="#2196F3"
+        app:backgroundTint="@null" />
+
+</LinearLayout>
